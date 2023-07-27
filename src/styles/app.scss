@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import 'statics';
+@import 'header';
+@import 'home';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $text2;
+    // text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: $color1;
+    overflow-x: hidden;
+}
+
+.disableBtn{
+    background-color: rgb(237,237,237);
+    cursor: not-allowed;
+}
