@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Roboto:wght@300;400;500;700;900&display=swap');
 
+@import 'animations';
 @import 'statics';
 @import 'header';
 @import 'home';
+@import 'info';
+@import 'work';
+@import 'timeline';
+@import 'services';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';
 
 *{
     margin: 0;
