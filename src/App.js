@@ -9,24 +9,19 @@ import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 
-
-
 function App() {
   return (
     <>
-    <Header/>
-    <Home/>
-    <Info/>
-    <Work/>
-    <Timeline/>
-    <Services/>
-    {/* <Testimonials/> */}
-    <Contact/>
-    <Footer/>
-    <Toaster/>
-
-    
-    
+      <Header />
+      <Home />
+      <Info />
+      <Work />
+      <Timeline />
+      <Services />
+      {/* <Testimonials/> */}
+      <Contact />
+      <Footer />
+      <Toaster />
     </>
   );
 }
