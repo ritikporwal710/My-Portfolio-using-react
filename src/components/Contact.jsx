@@ -8,9 +8,14 @@ const Contact = () => {
   const [message,setMessage] = useState('');
 
   const submitHandler = (e) =>{
-    // e.preventDefault(); 
-     console.log(name,email,message);
-     toast.success("Message Sent");
+    e.preventDefault(); 
+    //  console.log(name,email,message);
+    //  toast.success("Message Sent");
+    try {
+      
+    } catch (error) {
+      console.log("error is there in submitting the contact form",error);
+    }
   }
   return (
     <div id='contact'>

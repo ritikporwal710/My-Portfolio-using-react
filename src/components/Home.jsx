@@ -1,10 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight,BsChevronDown} from "react-icons/bs";
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/ritik_black.png";
 
 const Home = () => {
+  const downloadPDF = () => {
+    const driveLink =
+      "https://drive.google.com/uc?export=download&id=1ThiI5xYVBDcT0L8ry4biA8FVZf2kvc-L";
+    const link = document.createElement("a");
+    link.href = driveLink;
+    link.download = "Ritik_Porwal_resume.pdf"; // Set desired download file name here
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const animations = {
     h1: {
       initial: {
@@ -36,7 +46,7 @@ const Home = () => {
           </motion.h1>
           <Typewriter
             options={{
-              strings: ["A Developer", "A programmar", "A problem solver"],
+              strings: ["A Developer", "A Programmar", "A Problem solver"],
               autoStart: true,
               loop: true,
               cursor: "",
@@ -45,20 +55,19 @@ const Home = () => {
           />
           <div>
             <a href="mailto:ritikporwal090@gmail.com">Hire Me</a>
-            <a href="#work">
+            <a href="#" onClick={downloadPDF}>
               My Resume
               {/* Projects <BsArrowUpRight /> */}
             </a>
           </div>
-
         </div>
       </section>
       <section>
-        <img id = 'imgid' src={me} alt="#img" />
+        <img id="imgid" src={me} alt="#img" />
       </section>
-      <BsChevronDown/>
+      <BsChevronDown />
     </div>
-  )
+  );
 };
 
 export default Home;

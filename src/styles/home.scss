@@ -37,18 +37,18 @@
 
           > a {
             // &:first-of-type {
-              // css for hire me
-              background-color: $color3;
-              color: $color1;
+            // css for hire me
+            background-color: $color3;
+            color: $color1;
             //   padding: 1rem 2.5rem;
             //   margin: 2px 2px;
-              font-weight: 600;
-              padding: 16px 21px;
-              transition: all 0.3s;
-              animation: updowntime 1s infinite linear alternate;
-              &:hover {
-                background-color: $color3_1;
-            //   }
+            font-weight: 600;
+            padding: 16px 21px;
+            transition: all 0.3s;
+            animation: updowntime 1s infinite linear alternate;
+            &:hover {
+              background-color: $color3_1;
+              //   }
             }
             // &:last-of-type {
             //   font: 600 1.2rem $text2;
@@ -78,8 +78,10 @@
 
       &::after {
         content: "";
-        width: 39vmax;
-        height: 43vmax;
+        margin-bottom: 120px;
+        margin-left: 30px;
+        width: 32vmax;
+        height: 33vmax;
         background-color: $color3;
         position: absolute;
         z-index: -1;
