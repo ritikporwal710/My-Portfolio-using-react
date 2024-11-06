@@ -42,6 +42,7 @@ const Home = () => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
+
             Hi, I Am <br /> Ritik Porwal
           </motion.h1>
           <Typewriter

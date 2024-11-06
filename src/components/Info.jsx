@@ -52,7 +52,7 @@ const Info = () => {
                 <ul>
                   <li><span>Data Structures</span><br />Solved 1000+ questions</li>
                   <li><span>Frontend Development</span><br />Build two Projects</li>
-                  <li><span>Backend Development</span><br />Build one Project</li>
+                  <li><span>Backend Development</span><br />Build Two Project</li>
                 </ul>
               </div>
 
