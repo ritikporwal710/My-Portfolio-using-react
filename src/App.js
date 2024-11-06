@@ -3,11 +3,12 @@ import Home from "./components/Home";
 import Info from "./components/Info";
 import Work from "./components/Work";
 import Timeline from "./components/Timeline";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Info />
       <Work />
       <Timeline />
-      <Services />
+      <Projects />
       {/* <Testimonials/> */}
       <Contact />
       <Footer />

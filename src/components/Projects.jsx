@@ -2,13 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { AiFillIeCircle, AiFillAndroid, AiFillWindows } from "react-icons/ai";
 
-const Services = () => {
+const Projects = () => {
   // const animations = {
 
   // }
   return (
-    <div id="services">
-      <h2>Services</h2>
+    <div id="projects">
+      <h2> Projects </h2>
       <section>
         <motion.div className="serviceBox1">
           <h3>5+</h3>
@@ -43,4 +43,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

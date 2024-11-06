@@ -1,34 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Roboto:wght@300;400;500;700;900&display=swap");
 
-@import 'animations';
-@import 'statics';
-@import 'header';
-@import 'home';
-@import 'info';
-@import 'work';
-@import 'timeline';
-@import 'services';
-@import 'testimonials';
-@import 'contact';
-@import 'footer';
+@import "animations";
+@import "statics";
+@import "header";
+@import "home";
+@import "info";
+@import "work";
+@import "timeline";
+@import "projects";
+@import "testimonials";
+@import "contact";
+@import "footer";
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: $text2;
-    // text-decoration: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $text2;
+  // text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    background-color: $color1;
-    overflow-x: hidden;
+body {
+  background-color: $color1;
+  overflow-x: hidden;
 }
 
-.disableBtn{
-    background-color: rgb(237,237,237);
-    cursor: not-allowed;
+.disableBtn {
+  background-color: rgb(237, 237, 237);
+  cursor: not-allowed;
 }
