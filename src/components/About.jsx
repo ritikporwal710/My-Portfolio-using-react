@@ -12,7 +12,6 @@ const About = () => {
     for (let i = 0; i < 3; ++i) {
       tabcontents[i].classList.remove("active-tab");
     }
-   
   };
 
   const [activeTab, setActiveTab] = useState("skills");

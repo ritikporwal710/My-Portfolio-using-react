@@ -42,11 +42,14 @@ const Home = () => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
-
-            <span id="naming"> Hi, I'm Ritik Porwal, </span> software engineer from India.
+            <span id="naming"> Hi, I'm Ritik Porwal, </span> software engineer
+            from India.
           </motion.h1>
           <br />
-          <h5>I am a software engineer working in Bengaluru, India with specialization in Full-stack MERN Development.</h5>
+          <h5>
+            I am a software engineer working in Bengaluru, India with
+            specialization in Full-stack MERN Development.
+          </h5>
           <Typewriter
             options={{
               strings: ["A Developer", "A Programmar", "A Problem solver"],

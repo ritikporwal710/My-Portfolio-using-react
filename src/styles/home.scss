@@ -30,10 +30,10 @@
           letter-spacing: 3px;
           font-weight: bolder;
           color: whitesmoke;
-          background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         > div {
@@ -62,11 +62,11 @@
               color: $color3;
               border: none;
               border-radius: 8px;
-              background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+              background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
               color: whitesmoke;
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+              // background-clip: text;
+              // -webkit-background-clip: text;
+              // -webkit-text-fill-color: transparent;
               //   }
             }
             // &:last-of-type {
@@ -105,15 +105,12 @@
         position: absolute;
         z-index: -1;
         border-radius: 50%;
-        background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
-  
+        background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
       }
       > img {
         width: 40vmax;
         object-fit: cover;
         height: 50vmax;
-
-        
       }
     }
   }
@@ -129,10 +126,8 @@
   }
 }
 
-
-
-#naming{
-  background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+#naming {
+  background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
