@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logoo from "../assets/ritik_black.png";
 
-const Info = () => {
+const About = () => {
   let tablinks = document.getElementsByClassName("tab-links");
   let tabcontents = document.getElementsByClassName("titles-content");
 
@@ -18,7 +18,7 @@ const Info = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <div id="info">
+    <div id="about">
       <div className="container">
         <div className="row">
           <div className="first">
@@ -133,4 +133,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default About;

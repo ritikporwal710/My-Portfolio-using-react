@@ -11,11 +11,11 @@ const Header = () => {
 const NavContent = () => {
   return (
     <>
-      <h2>Ritik.</h2>
+      <h2 id="naming">Ritik.</h2>
       <div>
         <a href="#home">Home</a>
-        <a href="#info">Info</a>
-        <a href="#work">About</a>
+        {/* <a href="#info">Info</a> */}
+        <a href="#about">About</a>
         <a href="#timeline">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#testimonials">testimony</a>

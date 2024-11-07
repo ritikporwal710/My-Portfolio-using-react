@@ -11,18 +11,23 @@ nav {
   z-index: 60;
   > h2 {
     font-size: 2rem;
+    color: whitesmoke;
   }
   > div {
     display: flex;
     align-items: center;
     gap: 2rem;
     a {
-      color: $color6;
+      color: whitesmoke;
       font-weight: 500;
       transition: all 0.2s;
       letter-spacing: 1px;
       &:hover {
         color: $color3;
+        background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 
@@ -32,15 +37,30 @@ nav {
   > a > button {
     border: 1px solid $color6_1;
     padding: 0.5rem 2rem;
-    background-color: $color1;
+    border: none;
+    border-radius: 7px;
+    background-color: $color3;
+    // font-weight: 500;
     cursor: pointer;
     color: $color6;
     letter-spacing: 1px;
     font-weight: 500rem;
+    font-weight: bold;
     transition: all 0.3s;
     &:hover {
-      background-color: $color6;
-      color: $color4;
+      background-color: rgb(246, 233, 233);
+      color: $color3;
+      border: none;
+      border-radius: 7px;
+      background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+      color: whitesmoke;
     }
   }
+}
+
+#naming {
+  background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

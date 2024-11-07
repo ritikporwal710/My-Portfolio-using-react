@@ -16,7 +16,11 @@
         padding: 6rem;
 
         > h1 {
-          font: 900 4rem $text1;
+          font: 700 2rem $text1;
+          color: whitesmoke;
+        }
+        > h5 {
+          color: rgb(177, 205, 214);
         }
 
         .typewriterpara {
@@ -25,6 +29,11 @@
           height: 20px;
           letter-spacing: 3px;
           font-weight: bolder;
+          color: whitesmoke;
+          background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
         }
 
         > div {
@@ -39,15 +48,25 @@
             // &:first-of-type {
             // css for hire me
             background-color: $color3;
-            color: $color1;
+            color: white;
             //   padding: 1rem 2.5rem;
             //   margin: 2px 2px;
             font-weight: 600;
             padding: 16px 21px;
             transition: all 0.3s;
             animation: updowntime 1s infinite linear alternate;
+            border: none;
+            border-radius: 8px;
             &:hover {
-              background-color: $color3_1;
+              background-color: rgb(246, 233, 233);
+              color: $color3;
+              border: none;
+              border-radius: 8px;
+              background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+              color: whitesmoke;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
               //   }
             }
             // &:last-of-type {
@@ -86,11 +105,15 @@
         position: absolute;
         z-index: -1;
         border-radius: 50%;
+        background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+  
       }
       > img {
         width: 40vmax;
         object-fit: cover;
         height: 50vmax;
+
+        
       }
     }
   }
@@ -104,4 +127,13 @@
     transform: translate(-50%);
     animation: animateSvg 0.7s infinite linear alternate;
   }
+}
+
+
+
+#naming{
+  background: linear-gradient(270deg, $color3 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
