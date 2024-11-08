@@ -55,14 +55,18 @@
             padding: 16px 21px;
             transition: all 0.3s;
             animation: updowntime 1s infinite linear alternate;
+            background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+
             border: none;
             border-radius: 8px;
             &:hover {
-              background-color: rgb(246, 233, 233);
+              // background-color: rgb(246, 233, 233);
+              // background-color: $color6;
+
               color: $color3;
               border: none;
               border-radius: 8px;
-              background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+              background: linear-gradient(270deg, $color3 10%, green 100%);
               color: whitesmoke;
               // background-clip: text;
               // -webkit-background-clip: text;

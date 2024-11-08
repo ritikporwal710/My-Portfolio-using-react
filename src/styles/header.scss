@@ -47,12 +47,15 @@ nav {
     font-weight: 500rem;
     font-weight: bold;
     transition: all 0.3s;
+    background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+
     &:hover {
       background-color: rgb(246, 233, 233);
       color: $color3;
       border: none;
       border-radius: 7px;
-      background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+      background: linear-gradient(270deg, $color3 10%, green 100%);
+      background-color: $color3;
       color: whitesmoke;
     }
   }

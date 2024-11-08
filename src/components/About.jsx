@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logoo from "../assets/ritik_black.png";
+import me from "../assets/ritik_profile-pic2jpg.jpg";
 
 const About = () => {
   let tablinks = document.getElementsByClassName("tab-links");
@@ -17,116 +18,62 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <div id="about">
-      <div className="container">
-        <div className="row">
-          <div className="first">
-            <img src={logoo} alt="ritik" />
-          </div>
-          <div className="second">
-            <h1>About Myself</h1>
-            <p>
-              I am a final-year student from Bundelkhand Institute of
-              Engineering and Technology, Jhansi pursuing a Bachelor of
-              Technology in Computer Science and Engineering.
-              <br />
-              I love competitive programming and Data Structures and have solved
-              1000+ problems on different programming platforms. I always try to
-              solve a problem in as many ways as possible in the most optimized
-              way.
-              <br />I am a passionate and agile learner with a keen interest in
-              Data Structures and Web Development.
-            </p>
-
-            <div className="titles">
-              <p
-                className={`tab-links ${
-                  activeTab === "skills" ? "active" : ""
-                }`}
-                onClick={() => opentab("skills")}
-              >
-                Skills
-              </p>
-              <p
-                className={`tab-links ${
-                  activeTab === "education" ? "active" : ""
-                }`}
-                onClick={() => opentab("education")}
-              >
-                Education
-              </p>
-              <p
-                className={`tab-links ${
-                  activeTab === "achievements" ? "active" : ""
-                }`}
-                onClick={() => opentab("achievements")}
-              >
-                Achievements
-              </p>
-            </div>
-
-            <div
-              className={`titles-content ${
-                activeTab === "skills" ? "active-tab" : ""
-              }`}
-              id="skills"
-            >
-              <ul>
-                <li>
-                  <span>Data Structures</span>
-                  <br />
-                  Solved 1000+ questions
-                </li>
-                <li>
-                  <span>Frontend Development</span>
-                  <br />
-                  Built two projects
-                </li>
-                <li>
-                  <span>Backend Development</span>
-                  <br />
-                  Built two projects
-                </li>
-              </ul>
-            </div>
-
-            <div
-              className={`titles-content ${
-                activeTab === "education" ? "active-tab" : ""
-              }`}
-              id="education"
-            >
-              <ul>
-                <li>
-                  Bachelor of Technology in Computer Science and Engineering
-                </li>
-                <li>
-                  Bundelkhand Institute of Engineering and Technology, Jhansi
-                </li>
-              </ul>
-            </div>
-
-            <div
-              className={`titles-content ${
-                activeTab === "achievements" ? "active-tab" : ""
-              }`}
-              id="achievements"
-            >
-              <ul>
-                <li>
-                  <span>Competitive Programming</span>
-                  <br />
-                  Solved 1000+ problems
-                </li>
-                <li>
-                  <span>Projects</span>
-                  <br />
-                  Frontend and Backend projects completed
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div id="about" className="about">
+      <div className="about-title">
+        <h1>About me</h1>
+        {/* <img src="" alt="" /> */}
+      </div>
+      <div className="about-sections">
+        <div className="about-left">
+          <img id="myimg" src={me} alt="" />
         </div>
+        <div className="about-right">
+          <div className="about-para">
+            <p>
+              I am a software engineer working in Bengaluru, India with
+              specialization in Full-stack MERN Development.
+            </p>
+            <p>
+              I have solved over 1200+ DSA questions on various platforms like
+              Leetcode, Codechef, GFG, etc
+            </p>
+          </div>
+          <div className="about-skills">
+            <div className="about-skill">
+              <p>HTML & CSS</p>
+              <hr style={{ width: "50%" }} />{" "}
+            </div>{" "}
+            <div className="about-skill">
+              <p>React JS</p>
+              <hr style={{ width: "70%" }} />{" "}
+            </div>{" "}
+            <div className="about-skill">
+              <p>Javascript</p>
+              <hr style={{ width: "60%" }} />{" "}
+            </div>{" "}
+            <div className="about-skill">
+              <p>Node JS</p>
+              <hr style={{ width: "70%" }} />{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>
+      <div className="about-achievements">
+        <div className="about-achievement">
+          <h1>1+</h1>
+          <p>Years of Experience</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>10+</h1>
+          <p>Projects Completed</p>
+        </div>
+        <hr />
+        <div className="about-achievement">
+          <h1>13+</h1>
+          <p>Happy Clients</p>
+        </div>
+        {/* <hr /> */}
       </div>
     </div>
   );
