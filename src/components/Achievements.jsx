@@ -1,8 +1,8 @@
 import React from 'react'
 import data from "../assets/data.json";
-const Timeline = () => {
+const Achievements = () => {
   return (
-    <div id='timeline'>
+    <div id='achievements'>
         <div className="timelineBox">
             {
                 data.projects.map((item,index) => (
@@ -22,9 +22,9 @@ const TimelineItem = ({heading,text,index}) =>
     index%2 ===0? "leftTimeline" : "rightTimeline" }`}>
 
         <div>
-        <h2>{heading}</h2>
-        <p>{text}</p>
+        <h3 id = "achieved">{heading}</h3>
+        <p id='date'>{text}</p>
         </div>
     </div>
 
-export default Timeline;
+export default Achievements;

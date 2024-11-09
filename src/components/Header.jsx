@@ -16,7 +16,7 @@ const NavContent = () => {
         <a href="#home">Home</a>
         {/* <a href="#info">Info</a> */}
         <a href="#about">About</a>
-        <a href="#timeline">Achievements</a>
+        <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#testimonials">testimony</a>
         <a href="#contact">Contact</a>

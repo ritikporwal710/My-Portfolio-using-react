@@ -1,7 +1,8 @@
-#timeline {
+#achievements {
   width: 100%;
   height: 100vh;
   background-color: $color1;
+  padding-top: 100px;
 
   .timelineBox {
     width: 100%;
@@ -13,6 +14,7 @@
     justify-content: center;
     // align-items: center;
     height: 100%;
+    
 
     &::after {
         content: '';
@@ -23,6 +25,7 @@
         bottom: 0%;
         left: 50%;
         margin-left: -3px;
+        
     }
   }
 
@@ -30,10 +33,13 @@
     padding: 1rem 3rem;
     position: relative;
     background-color: inherit;
+    
     width: 50%;
+    
 
     &:nth-child(odd){
         text-align: right;
+        
         
         &::after{
             animation: upanddown 0.3s infinite ease-in alternate;
@@ -58,32 +64,49 @@
         border: 4px solid $color5;
         top: 45px;
         border-radius: 50%;
+        
         z-index: 1;
+        
         
         
 
     }
 
     > div{
-            padding: 20px 30px;
+            padding: 20px 25px;
             background-color: $color5;
             color: $color1 ;
             border-radius: 6px;
+        background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+        color: whitesmoke;
+
 
         }
   }
 
   .leftTimeline{
     left: 0;
+    
   }
   .rightTimeline{
     left: 50%;
 
     &::after{
         left: -16px;
+        
     }
 
 
 
   }
+}
+
+
+#achieved{
+  color: whitesmoke;
+}
+
+#date{
+  padding-top: 5px;
+  font-weight: bold;
 }
