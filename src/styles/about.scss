@@ -77,7 +77,6 @@
   font-size: 30px;
   font-weight: 600;
   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
-  background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -149,16 +148,15 @@
   margin-bottom: 80px;
 }
 
-.about-achievement{
+.about-achievement {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   transition: 0.5s;
-
 }
 
-.about-achievement h1{
+.about-achievement h1 {
   font-size: 50px;
   font-weight: 700;
   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
@@ -172,12 +170,12 @@
 //   font-weight: 500;
 // }
 
-.about-skill:hover{
+.about-skill:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
 
-.about-achievement:hover{
+.about-achievement:hover {
   transform: scale(1.12);
   transition: 0.5s;
 }

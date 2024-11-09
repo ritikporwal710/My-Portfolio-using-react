@@ -6,6 +6,7 @@ import image_reptik from "../assets/reptik_image.jpg";
 import image_portfolio from "../assets/portfolio_ss.jpg";
 import image_wallhouse from "../assets/wallhouse_ss.jpg";
 import image_expense from "../assets/expense_ss.jpg";
+import image_webapp from "../assets/webapp_ss.jpg";
 
 const Projects = () => {
   // const animations = {
@@ -31,8 +32,8 @@ const Projects = () => {
           link={"https://ritikport.onrender.com"}
         />
         <ProjectCard
-          name={image_wallhouse}
-          link={"https://ritikport.onrender.com"}
+          name={image_webapp}
+          link={"https://wonderful-gingersnap-691801.netlify.app/"}
         />
         {/* <button className="hover-button">Live Link</button> */}
       </section>
