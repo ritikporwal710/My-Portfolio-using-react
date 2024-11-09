@@ -1,63 +1,74 @@
-#projects{
-    width: 100%;
-    height: 100vh;
-    padding: $p;
-    background-color: $color5;
-    color: $color4;
-    overflow: hidden;
+#projects {
+  width: 100%;
+  height: 100vh;
+  // padding: 9vmax;
+  padding-left: 13.33vmax;
+  padding-right: 13.33vmax;
+  padding-top: 7vmax;
+  padding-bottom: 2vmax;
+  background-color: $color1;
+  color: $color4;
+  overflow: hidden;
 
-    >h2{
-        font: 700 2.5rem $text2;
-        width: fit-content;
-        border-bottom: 1px solid $color4;
-        padding: 0.5rem;
-        margin: auto;
+  > h2 {
+    font: 700 2.5rem $text2;
+    width: fit-content;
+    border-bottom: 1px solid $color4;
+    padding: 0.5rem;
+    margin: auto;
+  }
 
+  > section {
+    margin-top: 28px;
+    display: grid;
+    // margin: 3rem;
+    // flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    gap: 2rem;
 
+    > * {
+      width: 94%;
+      height: 94%;
+      background-color: $color4;
+      color: $color6;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px 3px #783dfc;
+      cursor: pointer;
+
+      
+
+      &:hover {
+        box-shadow: 0 0 10px 11px #783dfc;
+      }
+
+      > svg {
+        color: $color5;
+        font-size: 3rem;
+      }
+      > span {
+        font: 900 1rem $text2;
+        letter-spacing: 3px;
+        margin: 1rem;
+      }
     }
+  }
+}
 
-    >section{
-        display: grid;
-        margin: 3rem;
-        grid-template-columns: repeat(3,1fr);
-        height: 100%;
-        gap: 2rem;
-
-        > *{
-            width: 100%;
-            height: 100%;
-            background-color: $color4;
-            color: $color6;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.3s;
-            align-items: center;
-            justify-content: center;
-
-            &:hover{
-                box-shadow: 0 0 2px 13px $color1;
-            }
-
-            > svg{
-                color: $color5;
-                font-size: 3rem;
-
-            }
-            > span{
-                font: 900 1rem $text2;
-                letter-spacing: 3px;
-                margin: 1rem;
-
-            }
-
-        }
-
-            // .serviceBox1{
-            //     grid-column: 1 / 2;
-            //     grid-row: 1 / 3;
-            //     background-color: $color1;
-            // }
-
-    }
-
+.projects-title {
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

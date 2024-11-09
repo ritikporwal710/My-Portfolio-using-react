@@ -18,7 +18,7 @@ const NavContent = () => {
         <a href="#about">About</a>
         <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
-        <a href="#testimonials">testimony</a>
+        {/* <a href="#testimonials">testimony</a> */}
         <a href="#contact">Contact</a>
       </div>
       <a href="mailto:ritikporwal090@gmail.com">
