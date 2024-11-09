@@ -9,11 +9,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   margin: 120px 100px;
-  margin-left: -28px;
+  margin-left: -10px;
   color: whitesmoke;
-  padding-top: 300px;
+  padding-top: 120px;
 }
 
 .contact-title {
@@ -21,7 +21,7 @@
 }
 .contact-title h1 {
   padding: 0px 30px;
-  font-size: 58px;
+  font-size: 50px;
   font-weight: 600;
   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
   background-clip: text;
@@ -41,7 +41,7 @@
 }
 
 .contact-left h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   background: linear-gradient(270deg, $color3 10%, green 100%);
   background-clip: text;
@@ -52,14 +52,14 @@
 .contact-left p {
   max-width: 450px;
   color: #d8d8d8;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   color: #d8d8d8;
   font-size: 22px;
 }
@@ -74,49 +74,79 @@
   gap: 20px;
 }
 
+// .contact-detail
+//   > svg {
+//     font-size: 32px;
+//     color: $color4;
+
+//     &:hover {
+//       padding-left: 2px;
+//       color: $color3;
+//     }
+//   }
+
+.contact-detail {
+  // margin-top: 18px;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+
+  svg {
+    font-size: 32px;
+    color: #018103;
+
+    // color: $color4;
+
+    // &:hover {
+    //   padding-left: 2px;
+    //   color: $color3;
+    // }
+  }
+}
+
 .contact-right {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 30px;
+  gap: 20px;
 }
 
 .contact-right label {
   color: #d8d8d8;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .contact-right input {
   border: none;
-  width: 450px;
-  height: 78px;
+  width: 540px;
+  height: 50px;
   padding-left: 15px;
   border-radius: 8px;
   background: #32323c;
   color: #a0a0a0;
   font-family: Outfit;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .contact-right textarea {
-  width: 450px;
+  width: 540px;
   border: none;
   padding: 16px;
   border-radius: 8px;
   background: #32323c;
   color: #a0a0a0;
   font-family: Outfit;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .contact-submit {
   border: none;
   color: white;
-  border-radius: 13px;
+  border-radius: 10px;
   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
-  font-size: 21px;
-  padding: 17px 35px;
+  font-size: 20px;
+  padding: 14px 35px;
   margin-bottom: 50px;
   cursor: pointer;
   transition: 0.3s;

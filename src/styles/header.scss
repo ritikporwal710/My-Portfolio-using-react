@@ -24,7 +24,8 @@ nav {
       letter-spacing: 1px;
       &:hover {
         color: $color3;
-        background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+        background: linear-gradient(300deg, whitesmoke 17%, #b037e8 100%);
+        // text-decoration-line: underline;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -38,7 +39,7 @@ nav {
     border: 1px solid $color6_1;
     padding: 0.5rem 2rem;
     border: none;
-    border-radius: 7px;
+    border-radius: 8px;
     background-color: $color3;
     // font-weight: 500;
     cursor: pointer;
@@ -53,7 +54,7 @@ nav {
       background-color: rgb(246, 233, 233);
       color: $color3;
       border: none;
-      border-radius: 7px;
+      border-radius: 8px;
       background: linear-gradient(270deg, $color3 10%, green 100%);
       background-color: $color3;
       color: whitesmoke;

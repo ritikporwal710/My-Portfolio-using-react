@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Profiles from "./components/Profiles";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Projects />
       {/* <Work /> */}
 
-      {/* <Testimonials/> */}
+      <Profiles/>
       <Contact />
       <Footer />
       <Toaster />

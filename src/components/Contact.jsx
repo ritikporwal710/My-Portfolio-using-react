@@ -4,6 +4,16 @@ import { toast } from "react-hot-toast";
 import mail_icon from "../assets/mail_icon.svg";
 import call_icon from "../assets/call_icon.svg";
 import location_icon from "../assets/location_icon.svg";
+// export declare const AiOutlineContacts: IconType;
+
+import {
+  AiOutlineContacts,
+  AiFillMail,
+  AiOutlineHeatMap,
+  AiFillContacts,
+  AiOutlineHome,
+  AiFillHome,
+} from "react-icons/ai";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -33,14 +43,23 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
+              <a target={"blank"}>
+                <AiFillMail />
+              </a>
               {/* <img className="logos" src={mail_icon} alt="" />{" "} */}
               <p>ritikporwal710@gmail.com</p>
             </div>
             <div className="contact-detail">
+              <a target={"blank"}>
+                <AiFillContacts />
+              </a>
               {/* <img className="logos" src={call_icon} alt="" />{" "} */}
               <p>+91 8439026710</p>
             </div>
             <div className="contact-detail">
+              <a target={"blank"}>
+                <AiFillHome />
+              </a>
               {/* <img className="logos" src={location_icon} alt="" />{" "} */}
               <p>Bengaluru, India</p>
             </div>
@@ -54,7 +73,7 @@ const Contact = () => {
           <label htmlFor="">Write your message here</label>
           <textarea
             name="message"
-            rows="8"
+            rows="7"
             placeholder="Enter your message"
           ></textarea>
           <button type="submit" className="contact-submit">

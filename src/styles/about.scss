@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   // position: relative;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
   background-clip: text;
@@ -92,6 +92,7 @@
 #myimg {
   width: 300px;
   height: 300px;
+  border-radius: 100%;
 }
 
 .about-sections {
@@ -109,7 +110,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 24ox;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -128,7 +129,7 @@
 
 .about-skill p {
   min-width: 150px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
