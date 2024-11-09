@@ -20,13 +20,32 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    //  console.log(name,email,message);
-    //  toast.success("Message Sent");
-    try {
-    } catch (error) {
-      console.log("error is there in submitting the contact form", error);
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+
+  // };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "66cecba1-d2b6-4ecd-9df8-dea586bf88c4");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(res.message);
+      // console.log("Success", res);
     }
   };
   return (
@@ -46,26 +65,23 @@ const Contact = () => {
               <a target={"blank"}>
                 <AiFillMail />
               </a>
-              {/* <img className="logos" src={mail_icon} alt="" />{" "} */}
               <p>ritikporwal710@gmail.com</p>
             </div>
             <div className="contact-detail">
               <a target={"blank"}>
                 <AiFillContacts />
               </a>
-              {/* <img className="logos" src={call_icon} alt="" />{" "} */}
               <p>+91 8439026710</p>
             </div>
             <div className="contact-detail">
               <a target={"blank"}>
                 <AiFillHome />
               </a>
-              {/* <img className="logos" src={location_icon} alt="" />{" "} */}
               <p>Bengaluru, India</p>
             </div>
           </div>
         </div>
-        <form className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Your Email</label>
