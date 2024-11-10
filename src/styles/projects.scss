@@ -1,7 +1,6 @@
-
 #projects {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   // padding: 9vmax;
   padding-left: 16vmax;
   padding-right: 13.33vmax;
@@ -26,11 +25,12 @@
     // flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    gap: 1rem;
+    gap: 2rem;
+    // padding-right: 50px;
 
     > * {
       width: 90%;
-      height: 70%;
+      height: 88%;
       background-color: $color4;
       color: $color6;
       display: flex;
