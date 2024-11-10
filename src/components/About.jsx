@@ -40,20 +40,20 @@ const About = () => {
           </div>
           <div className="about-skills">
             <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr style={{ width: "50%" }} />{" "}
-            </div>{" "}
-            <div className="about-skill">
-              <p>React JS</p>
-              <hr style={{ width: "70%" }} />{" "}
-            </div>{" "}
-            <div className="about-skill">
-              <p>Javascript</p>
-              <hr style={{ width: "60%" }} />{" "}
+              <p>DSA</p>
+              <hr style={{ width: "100%" }} />{" "}
             </div>{" "}
             <div className="about-skill">
               <p>Node JS</p>
+              <hr style={{ width: "67%" }} />{" "}
+            </div>{" "}
+            <div className="about-skill">
+              <p>Javascript</p>
               <hr style={{ width: "70%" }} />{" "}
+            </div>{" "}
+            <div className="about-skill">
+              <p>React JS</p>
+              <hr style={{ width: "65%" }} />{" "}
             </div>{" "}
           </div>{" "}
         </div>{" "}
