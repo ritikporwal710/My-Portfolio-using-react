@@ -6,6 +6,7 @@
 
   > section {
     width: 100%;
+    // padding-top: 200px;
 
     &:first-of-type {
       padding-left: 10.33vmax;
@@ -16,6 +17,7 @@
         border-top: 1px solid $color6_2;
         height: 100%;
         padding: 6rem;
+        padding-top: 8rem;
 
         > h1 {
           padding-top: 20px;
@@ -98,31 +100,37 @@
 
     &:last-of-type {
       border-top: 1px solid $color6_2;
+
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
       overflow-x: hidden;
+      // margin-top: -40px;
 
       &::after {
         content: "";
         // margin-top: 80px;
         // padding-top: 40px;
         // margin-top: 80px;
-        margin-bottom: 120px;
+        margin-bottom: 190px;
         margin-left: 30px;
-        width: 32vmax;
-        height: 33vmax;
+        width: 28vmax;
+        height: 30vmax;
         background-color: $color3;
         position: absolute;
         z-index: -1;
         border-radius: 50%;
         background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
+        // margin-top: -100px;
       }
       > img {
-        width: 40vmax;
+        width: 35vmax;
         object-fit: cover;
-        height: 50vmax;
+        height: 45vmax;
+        margin-bottom: 60px;
+        // padding-top: 0px;
+        // margin-top: -20px;
       }
     }
   }
