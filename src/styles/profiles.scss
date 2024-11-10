@@ -30,13 +30,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
   padding-top: 25px;
+  width: 1170px;
+  margin-left: 110px;
 }
 
 .profiles-box {
   flex: 1 1 10rem;
-  height: 400px;
+  height: 420px;
+  // width: 200px;
   // background: var(--second-bg-color);
   //   background: linear-gradient(270deg, $color3 10%, #b415ff 100%);
 
