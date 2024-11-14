@@ -61,10 +61,10 @@ const Home = () => {
           />
           <div>
             <a href="mailto:ritikporwal090@gmail.com">Hire Me</a>
-            <a href="#" onClick={downloadPDF}>
+{/*             <a href="#" onClick={downloadPDF}>
               My Resume
+            </a> */}
               {/* Projects <BsArrowUpRight /> */}
-            </a>
           </div>
         </div>
       </section>
